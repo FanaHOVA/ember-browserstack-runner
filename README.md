@@ -1,4 +1,4 @@
-A command line interface to run browser tests over BrowserStack.
+A command line interface to run browser Ember.js tests over BrowserStack.
 
 ## Usage
 
