@@ -1,11 +1,11 @@
 {
-  "name": "browserstack-runner",
-  "description": "A command line interface to run browser tests over BrowserStack",
+  "name": "ember-browserstack-runner",
+  "description": "A command line interface to run browser tests over BrowserStack, configured for Ember.js",
   "version": "0.3.8",
-  "homepage": "https://github.com/browserstack/browserstack-runner",
+  "homepage": "https://github.com/fanahova/ember-browserstack-runner",
   "repository": {
     "type": "git",
-    "url": "https://github.com/browserstack/browserstack-runner.git"
+    "url": "https://github.com/fanahova/ember-browserstack-runner.git"
   },
   "dependencies": {
     "browserstack": "1.1.0",
@@ -23,7 +23,7 @@
     }
   ],
   "bin": {
-    "browserstack-runner": "bin/cli.js"
+    "ember-browserstack-runner": "bin/cli.js"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha tests/unit && node_modules/.bin/jshint lib/*.js bin/"

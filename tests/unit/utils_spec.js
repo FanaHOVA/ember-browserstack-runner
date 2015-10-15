@@ -38,8 +38,8 @@ describe('Utilities', function(){
   });
 
   it('should escape special characters incompatible with JSON.parse', function () {
-    var testString = '{"tracebacks":[{"actual":null,"message":"Died on test #1     at http://localhost:8888/test/main/globals.js:43:7\n    at http://localhost:8888/test/main/globals.js:67:2: Error","testName":"globals: Exported assertions"}]}';
-    var expectString = '{"tracebacks":[{"actual":null,"message":"Died on test #1     at http://localhost:8888/test/main/globals.js:43:7\\n    at http://localhost:8888/test/main/globals.js:67:2: Error","testName":"globals: Exported assertions"}]}';
+    var testString = '{"tracebacks":[{"actual":null,"message":"Died on test #1     at http://localhost:4200/test/main/globals.js:43:7\n    at http://localhost:4200/test/main/globals.js:67:2: Error","testName":"globals: Exported assertions"}]}';
+    var expectString = '{"tracebacks":[{"actual":null,"message":"Died on test #1     at http://localhost:4200/test/main/globals.js:43:7\\n    at http://localhost:4200/test/main/globals.js:67:2: Error","testName":"globals: Exported assertions"}]}';
 
     var malformedJson = '{ "key" : "Bad\njson contains\rall\tsorts\bof\vhorrible\0 & nasty\fescape sequences" }';
     var expectJson = { "key" : "Bad\njson contains\rall\tsorts\bof\u000bhorrible\u0000 & nasty\fescape sequences" };
