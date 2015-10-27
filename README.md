@@ -4,7 +4,7 @@ A command line interface to run browser Ember.js tests over BrowserStack.
 
 Install globally:
 
-    npm -g install browserstack-runner
+    npm -g install ember-browserstack-runner
 
 Then, after setting up the configuration, run tests with:
 
@@ -12,7 +12,7 @@ Then, after setting up the configuration, run tests with:
 
 You can also install locally and run the local binary:
 
-    npm install browserstack-runner
+    npm install ember-browserstack-runner
     node_modules/.bin/browserstack-runner
 
 If you're getting an error `EACCES open ... BrowserStackLocal`, configure npm to install modules using something other than the default "nobody" user:
@@ -25,7 +25,7 @@ Where `[user]` is replaced with a local user with enough permissions.
 
 To run browser tests on BrowserStack infrastructure, you need to create a `browserstack.json` file in project's root directory (the directory from which tests are run), by running this command:
 
-    browserstack-runner init
+    ember-browserstack-runner init
 
 ### Parameters for `browserstack.json`
 
